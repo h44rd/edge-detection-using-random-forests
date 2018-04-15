@@ -24,8 +24,6 @@ class forest(object):
 			for y in range(0, len(img[0])-32, 8):
 				for ind in trees_used:
 					tree = self.trees[ind]
-					# print x, y
-					# print np.asarray(img[x:x+32, y:y+32, :]).shape
 					features = preprocess_data.test_preprocessing2(img[x:x+32, y:y+32, :])
 					output[x/2:(x+32)/2, y/2:(y+32)/2] = np.add(output[x/2:(x+32)/2, y/2:(y+32)/2], np.asarray(tree.run(features)))
 					averaging[x/2:(x+32)/2, y/2:(y+32)/2] += 1

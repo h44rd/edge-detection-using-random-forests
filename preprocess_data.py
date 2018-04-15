@@ -1,10 +1,6 @@
 import cv2
 import numpy as np
 import scipy
-import pyximport
-# pyximport.install(build_dir=".pyxbld",
-#                   setup_args={"include_dirs": np.get_include()})
-# from _utils import histogram_core, pdist_core
 
 def rgb2luv(src):
     assert src.dtype == np.float64 or src.dtype == np.float32

@@ -12,6 +12,7 @@ __Eashwar Subramanian__ 201501163
  The code is run as follows "python main.py"
  
  The input images are to be placed in the directory "./input/images/test/"
+ 
  The output images will be saved to the directory "./edges/"
  
 ### Training:
